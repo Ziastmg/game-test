@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batu Gunting Kertas (2 Pemain)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Batu Gunting Kertas (2 Pemain)</h1>
+        <div class="player">
+            <h2>Pemain 1</h2>
+            <div class="choices">
+                <button onclick="playerChoice('player1', 'batu')">
+                    <img src="img/batu.png" alt="Batu" title="Pilih Batu">
+                </button>
+                <button onclick="playerChoice('player1', 'kertas')">
+                    <img src="img/kertas.png" alt="Kertas" title="Pilih Kertas">
+                </button>
+                <button onclick="playerChoice('player1', 'gunting')">
+                    <img src="img/gunting.png" alt="Gunting" title="Pilih Gunting">
+                </button>
+            </div>
+            <div id="player1Choice"></div>
+        </div>
+        <div class="player">
+            <h2>Pemain 2</h2>
+            <div class="choices">
+                <button onclick="playerChoice('player2', 'batu')">
+                    <img src="img/batu.png" alt="Batu" title="Pilih Batu">
+                </button>
+                <button onclick="playerChoice('player2', 'kertas')">
+                    <img src="img/kertas.png" alt="Kertas" title="Pilih Kertas">
+                </button>
+                <button onclick="playerChoice('player2', 'gunting')">
+                    <img src="img/gunting.png" alt="Gunting" title="Pilih Gunting">
+                </button>
+            </div>
+            <div id="player2Choice"></div>
+        </div>
+        <div id="result">
+            <img src="" alt="" id="resultImage">
+        </div>
+        <button id="ambilHadiah" onclick="ambilHadiah()" style="display: none;">Ambil Hadiah</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
